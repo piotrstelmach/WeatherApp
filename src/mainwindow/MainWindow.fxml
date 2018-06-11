@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="731.0" prefWidth="701.0" style="-fx-background-color: #2c3e50;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainwindow.Controller">
+   <children>
+      <ListView fx:id="weatherListView" layoutX="25.0" layoutY="82.0" prefHeight="627.0" prefWidth="480.0" style="-fx-background-color: #7f8c8d;" />
+      <Label layoutX="184.0" layoutY="23.0" text="5-day forecast from: " textFill="WHITE">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <ListView fx:id="cityListView" editable="true" layoutX="513.0" layoutY="134.0" prefHeight="95.0" prefWidth="145.0" style="-fx-background-color: #7f8c8d;" />
+      <Button layoutX="606.0" layoutY="242.0" mnemonicParsing="false" onAction="#changeCity" text="Wybierz " />
+      <Label fx:id="cityNameLabel" layoutX="477.0" layoutY="23.0" text="Warszawa" textFill="WHITE">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
